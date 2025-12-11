@@ -9,7 +9,7 @@ const Footer = () => {
        
         {/* Copyright */}
         <p className="text-sm">
-          © {new Date().getFullYear()} <span className="text-[#A855F7] font-medium">Alisha Saif</span> — All Rights Reserved.
+          © {new Date().getFullYear()} <span className="text-[#A855F7] font-medium">Alisha Saif .</span> Built with passion and clean code.
         </p>
       </div>
     </footer>

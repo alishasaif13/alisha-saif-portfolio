@@ -16,14 +16,11 @@ const Navbar = () => {
   return (
     <nav className="backdrop-blur-lg bg-[#0A0F1F]/70 border-b border-[#1F2937] text-gray-200 fixed w-full z-50 shadow-[0_0_10px_#A855F733]">
       <div className="py-4 px-6 flex justify-between items-center">
-        
-        {/* Left - Logo */}
+  
         <a href="/" className="flex items-center space-x-2">
           <img src="/logo.png" alt="Logo" className="h-14 w-17  " />
           <span className="text-xl font-bold tracking-wide"></span>
         </a>
-
-        {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((nav, index) => (
             <li key={index}>
@@ -36,8 +33,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        {/* Social Icons */}
         <div className="hidden md:flex space-x-4 items-center">
           <a href="https://linkedin.com" target="_blank" className="hover:text-[#A855F7] hover:drop-shadow-[0_0_10px_#A855F7] text-xl transition-all">
             <FaLinkedin />

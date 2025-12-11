@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const expData = [
     {
-      role: "MERN Stack Developer (Intern OnSite)",
+      role: "MERN Stack Developer",
       company: "Technic Mentor Software House",
       companyUrl: "https://technicmentors.com/",
       duration: "August 2025 - Present",
       desc: "Working on full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
-      certificate: null, // 👉 if you have certificate, add path here like "/certificates/technicmentor.pdf"
+      certificate: null, 
     },
     {
       role: "Frontend Developer (Remote)",
@@ -21,10 +21,10 @@ const Experience = () => {
     {
       role: "Web Development (Intern Remote)",
       company: "Developer.hub",
-      companyUrl: "https://www.upwork.com/nx/find-work/best-matches", // Replace with correct link if different
+      companyUrl: "https://developershubcorp.com/", 
       duration: " June 2025 - August 2025",
       desc: "Learned core frontend technologies and built multiple responsive landing pages.",
-      certificate: "/developer.jpeg", // 👉 Example — I'll activate button only if you confirm
+      certificate: "/developer.jpeg", 
     },
   ];
 
@@ -53,7 +53,7 @@ const Experience = () => {
               <a
                 href={exp.companyUrl}
                 target="_blank"
-                className="text-gray-300 font-medium hover:text-[#14B8A6] transition-all underline"
+                className="text-gray-300 font-medium hover:text-[#8B5CF6] transition-all underline"
               >
                 {exp.company}
               </a>
@@ -66,7 +66,7 @@ const Experience = () => {
                 <a
                   href={exp.certificate}
                   target="_blank"
-                  className="inline-block mt-4 text-sm px-4 py-2 border border-[#14B8A6] text-[#14B8A6] rounded-lg hover:bg-[#14B8A6] hover:text-white transition-all"
+                  className="inline-block mt-4 text-sm px-4 py-2 border border-[#8B5CF6] text-white rounded-lg hover:bg-[#8B5CF9] hover:text-white transition-all"
                 >
                   View Certificate
                 </a>

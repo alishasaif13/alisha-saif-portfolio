@@ -1,38 +1,53 @@
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const projectData = [
-    {
-      title: "Smart Healthcare System (FYP)",
-      desc: "Hospital management system including pharmacy, appointments, reports, and more.",
-      img: "/fyp.png",
-      link: "https://github.com/alishasaif13/portfolio/tree/main/fyp-smart-healthcare-system",
-    },
-    {
-      title: "Ecommerce Full-Stack (Web Application)",
-      desc: "Built a full-stack ecommerce web app using the MERN stack with authentication and payment integration.",
-      img: "/fullstack.png",
-      link: "https://ecommerce-fullstack-design-two.vercel.app/",
-    },
-    {
-      title: "Amazon Clone (Frontend Web Project)",
-      desc: "Developed a static frontend clone of Amazon using HTML, CSS, and JavaScript.",
-      img: "/amazon.png",
-      link: "https://github.com/alishasaif13",
-    },
-    {
-      title: "Beauty Products E-Commerce UI",
-      desc: "Designed a responsive beauty products UI using modern UI/UX principles.",
-      img:"/ui.png",
-      link: "https://store-xz22.vercel.app/",
-    },
-    {
-      title: "Almahdia Fashion App",
-      desc: "Developed a modern and responsive fashion e-commerce website with a stylish UI and smooth user experience.",
-      img:"/almahdia.png",
-      link: "http://almahdia-fashion-app.vercel.app",
-    },
-  ];
+const projectData = [
+  {
+    title: "Smart Healthcare System (FYP)",
+    desc: "Developed a hospital management system with modules for pharmacy, appointments, patient reports, and admin management. Includes a responsive UI and database integration for smooth workflows.",
+    img: "/fyp.png",
+    link: "https://github.com/alishasaif13/portfolio/tree/main/fyp-smart-healthcare-system",
+  },
+  {
+    title: "Ecommerce Full-Stack (Web Application)",
+    desc: "Built a full-stack ecommerce web application with user authentication, product management, shopping cart, and payment integration. Designed a clean, responsive UI and connected it to a backend database for real-time operations.",
+    img: "/fullstack.png",
+    link: "https://ecommerce-fullstack-design-two.vercel.app/",
+  },
+  {
+    title: "Amazon Clone (Frontend Web Project)",
+    desc: "Developed a static frontend clone of Amazon with product listing, search functionality, and responsive design. Focused on modern UI/UX and clean HTML, CSS, and JavaScript implementation.",
+    img: "/amazon.png",
+    link: "https://github.com/alishasaif13",
+  },
+  {
+    title: "Beauty Products E-Commerce UI",
+    desc: "Designed a responsive e-commerce UI for beauty products featuring product cards, filtering, and interactive components. Applied modern design principles for a smooth user experience.",
+    img:"/ui.png",
+    link: "https://store-xz22.vercel.app/",
+  },
+  {
+    title: "Almahdia Fashion App",
+    desc: "Developed a modern and responsive fashion e-commerce website with stylish UI, smooth navigation, product listings, and user-friendly interactions for a complete shopping experience.",
+    img:"/almahdia.png",
+    link: "http://almahdia-fashion-app.vercel.app",
+  },
+  {
+    title: "Full-Stack POS & Inventory Management System",
+    desc: "Built a scalable POS and inventory system with modules for products, categories and purchases. Features include stock updates, invoice generation, search & pagination, and reusable components. Backend implemented with Node.js, Express, and MongoDB.",
+    img: "/pos2.png",
+    link: "https://github.com/alishasaif13/pos-inventory-system",
+  },
+  {
+  title: "Kids Learning App",
+  desc: "Designed an interactive learning app for young children with modules for alphabets, counting and mini-games. Built reusable card components, tracing features and visual activities to make learning simple and engaging. Developed with React, custom hooks and clean modular UI.",
+  img: "/kidsapp.png",
+  link: "https://kids-tracing-app.vercel.app/"
+}
+
+];
+
+
 
   return (
     <section id="projects" className="py-20 bg-[#0A0F1F] px-6">

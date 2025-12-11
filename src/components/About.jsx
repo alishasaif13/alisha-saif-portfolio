@@ -7,7 +7,6 @@ const About = () => {
       className="min-h-screen flex items-center justify-center px-6 bg-[#0A0F1F] pt-24"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-        {/* LEFT TEXT SECTION */}
         <motion.div
           className="text-left"
           initial={{ opacity: 0, y: 40 }}
@@ -39,12 +38,15 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Recent BSIT graduate with hands-on experience in building scalable web
-            applications using the MERN stack. Passionate about creating elegant UI,
-            writing clean code, and delivering high-performing digital solutions.
+            I’m a BSIT graduate and MERN Stack developer who builds practical
+            and scalable web applications. I work with React, Node, Express, and
+            MongoDB and focus on writing clean and maintainable code. I’ve built
+            full-stack projects, handled both UI and backend logic, and
+            delivered complete features end to end. I’m looking for
+            opportunities to work on real-world products and grow as a
+            developer.
           </motion.p>
 
-          {/* BUTTONS */}
           <motion.div
             className="mt-8 flex flex-wrap gap-4"
             initial={{ opacity: 0, y: 30 }}
@@ -76,7 +78,6 @@ const About = () => {
           </motion.div>
         </motion.div>
 
-        {/* RIGHT IMAGE SECTION */}
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}

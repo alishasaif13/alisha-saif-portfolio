@@ -49,7 +49,9 @@ const Contact = () => {
                        transition-all duration-300 hover:-translate-y-2"
           >
             <FaInstagram size={24} />
+
           </a>
+          
         </div>
 
         <p className="text-gray-400 mt-8">
