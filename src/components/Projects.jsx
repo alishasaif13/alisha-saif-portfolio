@@ -39,7 +39,7 @@ const projectData = [
     link: "https://github.com/alishasaif13/pos-inventory-system",
   },
   {
-  title: "Kids Learning App",
+  title: "Kids Learning Hub App",
   desc: "Designed an interactive learning app for young children with modules for alphabets, counting and mini-games. Built reusable card components, tracing features and visual activities to make learning simple and engaging. Developed with React, custom hooks and clean modular UI.",
   img: "/kidsapp.png",
   link: "https://kids-tracing-app.vercel.app/"

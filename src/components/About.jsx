@@ -7,8 +7,9 @@ const About = () => {
       className="min-h-screen flex items-center justify-center px-6 bg-[#0A0F1F] pt-24"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
+        {/* Text Section */}
         <motion.div
-          className="text-left"
+          className="text-left order-2 md:order-1"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -78,8 +79,9 @@ const About = () => {
           </motion.div>
         </motion.div>
 
+        {/* Image Section */}
         <motion.div
-          className="flex justify-center"
+          className="flex justify-center order-1 md:order-2"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
