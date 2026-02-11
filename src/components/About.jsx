@@ -69,7 +69,7 @@ const About = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1fJwQQXRjtN4Ihzs62E24SUVuuSYu5Xym/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1LrkkSIGgJHDzYQTkc1mEEnOCKemPQLxp/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white hover:shadow-[0_0_15px_#8B5CF6] transition duration-300"
