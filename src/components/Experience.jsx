@@ -6,7 +6,7 @@ const Experience = () => {
       role: "MERN Stack Developer",
       company: "Technic Mentor Software House",
       companyUrl: "https://technicmentors.com/",
-      duration: "August 2025 - Present",
+      duration: "August 2025 - January 2026",
       desc: "Working on full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
       certificate: null, 
     },

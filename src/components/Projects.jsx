@@ -4,48 +4,54 @@ const Projects = () => {
 const projectData = [
   {
     title: "Smart Healthcare System (FYP)",
-    desc: "Developed a hospital management system with modules for pharmacy, appointments, patient reports, and admin management. Includes a responsive UI and database integration for smooth workflows.",
+    desc: "Developed a hospital management system with modules for pharmacy, appointments, patient reports, and admin management. Integrated database operations with a responsive UI to support smooth and efficient workflows.",
     img: "/fyp.png",
     link: "https://github.com/alishasaif13/portfolio/tree/main/fyp-smart-healthcare-system",
   },
   {
-    title: "Ecommerce Full-Stack (Web Application)",
-    desc: "Built a full-stack ecommerce web application with user authentication, product management, shopping cart, and payment integration. Designed a clean, responsive UI and connected it to a backend database for real-time operations.",
+    title: "Ecommerce Full-Stack Application",
+    desc: "Built a full-stack ecommerce web application with user authentication, product management, shopping cart, and payment integration. Connected a responsive frontend with a backend database for real-time operations.",
     img: "/fullstack.png",
     link: "https://ecommerce-fullstack-design-two.vercel.app/",
   },
   {
-    title: "Amazon Clone (Frontend Web Project)",
-    desc: "Developed a static frontend clone of Amazon with product listing, search functionality, and responsive design. Focused on modern UI/UX and clean HTML, CSS, and JavaScript implementation.",
+    title: "Amazon Clone (UI Project)",
+    desc: "Developed a frontend clone of Amazon featuring product listings, search functionality, and responsive layouts. Focused on clean UI implementation using HTML, CSS, and JavaScript.",
     img: "/amazon.png",
     link: "https://github.com/alishasaif13",
   },
   {
     title: "Beauty Products E-Commerce UI",
-    desc: "Designed a responsive e-commerce UI for beauty products featuring product cards, filtering, and interactive components. Applied modern design principles for a smooth user experience.",
-    img:"/ui.png",
+    desc: "Designed a responsive e-commerce UI for beauty products with product cards, filtering options, and interactive components. Emphasized modern design principles for a smooth user experience.",
+    img: "/ui.png",
     link: "https://store-xz22.vercel.app/",
   },
   {
-    title: "Almahdia Fashion App",
-    desc: "Developed a modern and responsive fashion e-commerce website with stylish UI, smooth navigation, product listings, and user-friendly interactions for a complete shopping experience.",
-    img:"/almahdia.png",
+    title: "Almahdia Fashion UI App",
+    desc: "Developed a modern and responsive fashion e-commerce website with structured product listings, smooth navigation, and user-friendly UI interactions.",
+    img: "/almahdia.png",
     link: "http://almahdia-fashion-app.vercel.app",
   },
   {
     title: "Full-Stack POS & Inventory Management System",
-    desc: "Built a scalable POS and inventory system with modules for products, categories and purchases. Features include stock updates, invoice generation, search & pagination, and reusable components. Backend implemented with Node.js, Express, and MongoDB.",
+    desc: "Built a scalable POS and inventory management system with modules for products, categories, and purchases. Implemented stock updates, invoice generation, search, pagination, and reusable components using Node.js, Express, and MongoDB.",
     img: "/pos2.png",
     link: "https://github.com/alishasaif13/pos-inventory-system",
   },
   {
-  title: "Kids Learning Hub App",
-  desc: "Designed an interactive learning app for young children with modules for alphabets, counting and mini-games. Built reusable card components, tracing features and visual activities to make learning simple and engaging. Developed with React, custom hooks and clean modular UI.",
-  img: "/kidsapp.png",
-  link: "https://kids-tracing-app.vercel.app/"
-}
-
+    title: "Kids Learning Hub UI App",
+    desc: "Designed an interactive learning app for children with a structured flow starting from learning, tracing, and matching modules, followed by counting, English alphabets, and Haroof-e-Tahaji. Built using React with reusable components and a clean modular UI.",
+    img: "/kidsapp.png",
+    link: "https://kids-tracing-app.vercel.app/",
+  },
+  {
+    title: "MathFlow Adaptive Learning Platform",
+    desc: "Developing an adaptive learning platform that personalizes math practice based on student performance. Includes role-based authentication, admin-managed content, rule-based difficulty adjustment, progress tracking, and analytics using the MERN stack.",
+    img: "/mathflow.png",
+    link: "https://github.com/alishasaif13/mathflow",
+  },
 ];
+
 
 
 
