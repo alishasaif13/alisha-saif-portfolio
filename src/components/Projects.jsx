@@ -41,7 +41,7 @@ const projectData = [
   {
     title: "Kids Learning Hub UI App",
     desc: "Designed an interactive learning app for children with a structured flow starting from learning, tracing, and matching modules, followed by counting, English alphabets, and Haroof-e-Tahaji. Built using React with reusable components and a clean modular UI.",
-    img: "/kidsapp.png",
+    img: "/kidsapp1.png",
     link: "https://kids-tracing-app.vercel.app/",
   },
   {
