@@ -4,10 +4,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center px-6 bg-[#0A0F1F] pt-24"
+      className="min-h-screen flex items-center justify-center px-6 bg-[#0A0F1F] pt-26"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-        {/* Text Section */}
+        
+        {/* TEXT */}
         <motion.div
           className="text-left order-2 md:order-1"
           initial={{ opacity: 0, y: 40 }}
@@ -30,7 +31,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            MERN Stack Developer & Frontend Developer
+            Full Stack Developer (MERN) | Golang & PostgreSQL
           </motion.h2>
 
           <motion.p
@@ -39,13 +40,19 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            I’m a BSIT graduate and MERN Stack developer who builds practical
-            and scalable web applications. I work with React, Node, Express, and
-            MongoDB and focus on writing clean and maintainable code. I’ve built
-            full-stack projects, handled both UI and backend logic, and
-            delivered complete features end to end. I’m looking for
-            opportunities to work on real-world products and grow as a
-            developer.
+            I build scalable web applications and RESTful APIs using MERN stack and Golang. 
+            I’ve worked on real-world systems including e-commerce, inventory management, 
+            and healthcare platforms.
+          </motion.p>
+
+          <motion.p
+            className="mt-3 text-gray-400 leading-relaxed text-lg"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+          >
+            Currently working as a Golang Developer, focused on backend systems, 
+            API development, and database design.
           </motion.p>
 
           <motion.div
@@ -63,23 +70,23 @@ const About = () => {
 
             <a
               href="#contact"
-              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white hover:shadow-[0_0_15px_#8B5CF6] transition duration-300"
+              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white transition duration-300"
             >
               Contact Me
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1LrkkSIGgJHDzYQTkc1mEEnOCKemPQLxp/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1LrkkSIGgJHDzYQTkc1mEEnOCKemPQLxp/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white hover:shadow-[0_0_15px_#8B5CF6] transition duration-300"
+              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white transition duration-300"
             >
               View CV
             </a>
           </motion.div>
         </motion.div>
 
-        {/* Image Section */}
+        {/* IMAGE */}
         <motion.div
           className="flex justify-center order-1 md:order-2"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -88,13 +95,14 @@ const About = () => {
         >
           <div className="relative">
             <img
-              src="/alisha.png"
+              src="/alisha.jpeg"
               alt="Alisha Saif"
               className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#8B5CF6] shadow-[0_0_25px_#8B5CF6]"
             />
-            <div className="absolute inset-0 rounded-full blur-2xl opacity-30 bg-[#8B5CF6]"></div>
+            <div className="absolute inset-0 rounded-full blur-2xl opacity-30 "></div>
           </div>
         </motion.div>
+
       </div>
     </section>
   );

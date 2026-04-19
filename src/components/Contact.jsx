@@ -1,62 +1,65 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-[#0A0F1F] flex justify-center px-6">
+    <section id="contact" className="py-20 bg-[#0A0F1F] px-6 flex justify-center">
       <div className="max-w-3xl w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          Let's Connect
+
+        <h2 className="text-4xl font-bold text-white mb-6">
+          Get In Touch
         </h2>
+
         <p className="text-gray-400 mb-10">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          Open to backend and full-stack opportunities. If you have a role or project, feel free to reach out.
         </p>
 
-        <div className="flex justify-center gap-6">
+        {/* PRIMARY CTA */}
+        <a
+          href="mailto:alisha.saif456@gmail.com"
+          className="inline-block px-6 py-3 bg-[#8B5CF6] text-white rounded-lg 
+          shadow-md hover:shadow-[0_0_15px_#8B5CF6] transition duration-300"
+        >
+          Email Me
+        </a>
+
+        {/* SOCIALS */}
+        <div className="flex justify-center gap-6 mt-10">
+
           <a
-            href="mailto:alishasaif132@gmail.com"
-            className="p-4 bg-[#111827] border border-[#1F2937] text-[#A855F7] rounded-full 
-                       hover:shadow-[0_0_20px_#A855F7] hover:border-[#A855F7] 
-                       transition-all duration-300 hover:-translate-y-2"
+            href="mailto:alisha.saif456@gmail.com"
+            className="p-4 bg-[#111827] border border-[#1F2937] text-gray-300 rounded-full 
+            hover:border-[#8B5CF6] hover:text-white transition duration-300"
           >
-            <FaEnvelope size={24} />
+            <FaEnvelope size={22} />
           </a>
 
           <a
             href="https://github.com/alishasaif13"
             target="_blank"
-            className="p-4 bg-[#111827] border border-[#1F2937] text-[#A855F7] rounded-full 
-                       hover:shadow-[0_0_20px_#A855F7] hover:border-[#A855F7] 
-                       transition-all duration-300 hover:-translate-y-2"
+            rel="noopener noreferrer"
+            className="p-4 bg-[#111827] border border-[#1F2937] text-gray-300 rounded-full 
+            hover:border-[#8B5CF6] hover:text-white transition duration-300"
           >
-            <FaGithub size={24} />
+            <FaGithub size={22} />
           </a>
 
           <a
             href="https://linkedin.com/in/alisha-saif-604057287"
             target="_blank"
-            className="p-4 bg-[#111827] border border-[#1F2937] text-[#A855F7] rounded-full 
-                       hover:shadow-[0_0_20px_#A855F7] hover:border-[#A855F7] 
-                       transition-all duration-300 hover:-translate-y-2"
+            rel="noopener noreferrer"
+            className="p-4 bg-[#111827] border border-[#1F2937] text-gray-300 rounded-full 
+            hover:border-[#8B5CF6] hover:text-white transition duration-300"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={22} />
           </a>
 
-          <a
-            href="https://www.instagram.com/alisha.saif45?igsh=bnVxaXJ5dXAxazNw"
-            target="_blank"
-            className="p-4 bg-[#111827] border border-[#1F2937] text-[#A855F7] rounded-full 
-                       hover:shadow-[0_0_20px_#A855F7] hover:border-[#A855F7] 
-                       transition-all duration-300 hover:-translate-y-2"
-          >
-            <FaInstagram size={24} />
-
-          </a>
-          
         </div>
 
-        <p className="text-gray-400 mt-8">
-          📩 <span className="text-[#A855F7] font-medium">alisha.saif456@gmail.com </span>
+        {/* EMAIL TEXT */}
+        <p className="text-gray-500 mt-8 text-sm">
+          alisha.saif456@gmail.com
         </p>
+
       </div>
     </section>
   );
