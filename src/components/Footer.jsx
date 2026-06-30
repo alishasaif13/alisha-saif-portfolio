@@ -1,17 +1,16 @@
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#020617] text-gray-400 py-10 border-t border-white/10 mt-2">
-      <div className="max-w-5xl mx-auto text-center">
+    <footer className="bg-[#111827] border-t border-white/10 py-6">
+      <div className="max-w-6xl mx-auto px-6 text-center">
 
-        {/* divider line */}
-        <div className="w-16 h-[2px] bg-[#8B5CF6] mx-auto mb-4 rounded-full"></div>
+        <p className="text-sm text-gray-400">
+          © {new Date().getFullYear()} Alisha Saif. All rights reserved.
+        </p>
 
-        <p className="text-sm">
-          © {new Date().getFullYear()}{" "}
-          <span className="text-[#A855F7] font-medium">Alisha Saif</span>.  
-          Built with clean and scalable code.
+        <p className="text-xs text-gray-500 mt-2">
+          Built with React, Tailwind CSS & Framer Motion.
         </p>
 
       </div>

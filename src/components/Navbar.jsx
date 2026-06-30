@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,80 +10,90 @@ const Navbar = () => {
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
     { name: "Experience", link: "#experience" },
+    { name: "Certifications", link: "#courses" },
     { name: "Contact", link: "#contact" },
   ];
 
   return (
-  <nav className="fixed w-full z-50 bg-[#0F172A]/80 backdrop-blur-lg border-b border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+   <nav className="fixed w-full z-50 bg-[#111827] border-t  backdrop-blur-md border-b border-white/40 shadow-lg">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
 
-  {/* subtle top highlight */}
-  <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#8B5CF6]/50 to-transparent"></div>
+        {/* Logo */}
+        <a href="#about" className="flex items-center gap-3">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="w-12 h-12 rounded-md object-cover"
+          />
 
-  <div className="py-3 px-6 flex justify-between items-center">
-        {/* LOGO */}
-        <a href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Logo" className="h-12 w-12 object-contain" />
+          <div className="hidden lg:block">
+            <h1 className="text-white font-semibold">
+              Alisha Saif
+            </h1>
+
+            <p className="text-xs text-gray-400">
+              Backend Developer
+            </p>
+          </div>
         </a>
 
-        {/* DESKTOP MENU */}
-        <ul className="hidden md:flex space-x-8">
-          {navLinks.map((nav, index) => (
-            <li key={index}>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-8">
+          {navLinks.map((item) => (
+            <li key={item.name}>
               <a
-                href={nav.link}
-                className="text-gray-300 font-medium hover:text-[#8B5CF6] transition duration-300"
+                href={item.link}
+                className="text-gray-300 hover:text-[#8B5CF6] transition font-medium"
               >
-                {nav.name}
+                {item.name}
               </a>
             </li>
           ))}
         </ul>
 
-        {/* SOCIAL ICONS */}
-        <div className="hidden md:flex space-x-4 items-center">
+        {/* Social */}
+        <div className="hidden md:flex items-center gap-3">
           <a
             href="https://linkedin.com/in/alisha-saif-604057287"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8B5CF6] transition"
+            rel="noreferrer"
+            className="w-10 h-10 rounded-full bg-[#111827] flex items-center justify-center hover:bg-[#8B5CF6] transition"
           >
-            <FaLinkedin size={20} />
+            <FaLinkedin className="text-white" />
           </a>
 
           <a
             href="https://github.com/alishasaif13"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8B5CF6] transition"
+            rel="noreferrer"
+            className="w-10 h-10 rounded-full bg-[#111827] flex items-center justify-center hover:bg-[#8B5CF6] transition"
           >
-            <FaGithub size={20} />
+            <FaGithub className="text-white" />
           </a>
         </div>
 
-        {/* MOBILE TOGGLE */}
+        {/* Mobile */}
         <button
-          className="md:hidden text-white text-2xl"
           onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-white text-2xl"
         >
-          ☰
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* MOBILE MENU */}
       {isOpen && (
-        <ul className="md:hidden bg-[#0A0F1F]/95 backdrop-blur-md px-6 pb-4 space-y-2 text-center">
-          {navLinks.map((nav, index) => (
-            <li key={index}>
-              <a
-                href={nav.link}
-                className="block py-2 text-gray-300 hover:text-[#8B5CF6] transition"
-                onClick={() => setIsOpen(false)}
-              >
-                {nav.name}
-              </a>
-            </li>
+        <div className="md:hidden bg-[#111827] border-t border-[#1F2937]">
+          {navLinks.map((item) => (
+            <a
+              key={item.name}
+              href={item.link}
+              onClick={() => setIsOpen(false)}
+              className="block text-center py-4 text-gray-300 hover:text-[#8B5CF6]"
+            >
+              {item.name}
+            </a>
           ))}
-        </ul>
+        </div>
       )}
     </nav>
   );

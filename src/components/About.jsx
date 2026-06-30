@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center px-6 bg-[#0A0F1F] pt-26"
+      className="min-h-screen flex items-center justify-center px-6  bg-[#0A0F1F] border-t border-[#1F2937] pt-26"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
         
@@ -31,7 +31,8 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Full Stack Developer (MERN) | Golang & PostgreSQL
+        
+            Backend Developer | Golang | PostgreSQL | MERN Stack
           </motion.h2>
 
           <motion.p
@@ -40,9 +41,8 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            I build scalable web applications and RESTful APIs using MERN stack and Golang. 
-            I’ve worked on real-world systems including e-commerce, inventory management, 
-            and healthcare platforms.
+          I build scalable backend systems and full-stack web applications using Golang, PostgreSQL, and the MERN stack. Experienced in developing RESTful APIs, JWT authentication, RBAC, and multi-tenant architectures for healthcare and facility management systems.
+          
           </motion.p>
 
           <motion.p
@@ -51,8 +51,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Currently working as a Golang Developer, focused on backend systems, 
-            API development, and database design.
+            Currently working as a Golang Developer, building production-level backend services, optimizing PostgreSQL databases, and collaborating on enterprise healthcare solutions.
           </motion.p>
 
           <motion.div
@@ -61,6 +60,14 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
+              <a
+              href="https://drive.google.com/file/d/1laJLArbZw-Ebhvv_M2VWnUw831XY1Jbr/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white transition duration-300"
+            >
+              View CV
+            </a>
             <a
               href="#projects"
               className="px-6 py-3 bg-[#8B5CF6] text-white rounded-lg shadow-lg hover:shadow-[0_0_15px_#8B5CF6] transition duration-300"
@@ -75,14 +82,7 @@ const About = () => {
               Contact Me
             </a>
 
-            <a
-              href="https://drive.google.com/file/d/1LrkkSIGgJHDzYQTkc1mEEnOCKemPQLxp/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-[#8B5CF6] text-[#8B5CF6] rounded-lg hover:bg-[#8B5CF6] hover:text-white transition duration-300"
-            >
-              View CV
-            </a>
+          
           </motion.div>
         </motion.div>
 
@@ -97,9 +97,9 @@ const About = () => {
             <img
               src="/alisha.jpeg"
               alt="Alisha Saif"
-              className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#8B5CF6] shadow-[0_0_25px_#8B5CF6]"
+             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#8B5CF6] shadow-[0_0_25px_#8B5CF6] transition duration-500 hover:scale-105"
             />
-            <div className="absolute inset-0 rounded-full blur-2xl opacity-30 "></div>
+           <div className="absolute inset-0 -z-10 rounded-full bg-[#8B5CF6] blur-3xl opacity-20"></div>
           </div>
         </motion.div>
 

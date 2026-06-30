@@ -20,7 +20,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-[#0A0F1F] px-6">
+    <section id="education" className="py-20 bg-[#0F172A] px-6">
       <div className="max-w-6xl mx-auto text-center">
         
         <h2 className="text-4xl font-bold text-white mb-12">

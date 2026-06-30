@@ -3,56 +3,57 @@ import { motion } from "framer-motion";
 const Projects = () => {
 const projectData = [
   {
-    title: "Smart Healthcare System (FYP)",
-    desc: "Developed a healthcare management system with authentication, role-based access, and modules for patients, pharmacy, and appointments.",
+    title: "Facility Management System (FMS)",
+    desc: "Developed a multi-tenant hospital facility management backend with secure JWT authentication, RBAC, RESTful APIs, and modules for asset, inventory, housekeeping, vendor, and bed management.",
+    tech: "Golang • Gin • GORM • PostgreSQL • JWT • Git",
+    img: "/FMS.png",
+    link: "https://github.com/alishasaif13", // update repo
+  },
+  {
+    title: "Smart Healthcare System (Final Year Project)",
+    desc: "Built a full-stack healthcare management system with appointment scheduling, patient records, authentication, and role-based access control.",
+    tech: "React.js • Node.js • Express.js • MongoDB",
     img: "/fyp.png",
     link: "https://github.com/alishasaif13/portfolio/tree/main/fyp-smart-healthcare-system",
   },
   {
-    title: "Ecommerce Full-Stack Application",
-    desc: "Built a full-stack e-commerce application with authentication, product management, cart, and order processing.",
-    img: "/fullstack.png",
-    link: "https://ecommerce-fullstack-design-two.vercel.app/",
-  },
-  {
-    title: "Amazon Clone (UI Project)",
-    desc: "Created a responsive Amazon-style UI with product listings, search functionality, and clean layout design.",
-    img: "/amazon.png",
-    link: "https://github.com/alishasaif13",
-  },
-  {
-    title: "Beauty Products E-Commerce UI",
-    desc: "Designed a responsive e-commerce UI with product cards, filtering, and modern user interface components.",
-    img: "/ui.png",
-    link: "https://store-xz22.vercel.app/",
-  },
-  {
-    title: "Almahdia Fashion UI App",
-    desc: "Developed a responsive fashion e-commerce frontend with structured product listings and smooth navigation.",
-    img: "/almahdia.png",
-    link: "http://almahdia-fashion-app.vercel.app",
-  },
-  {
     title: "Full-Stack POS & Inventory Management System",
-    desc: "Built an inventory system with product management, stock tracking, search, pagination, and invoice handling.",
+    desc: "Contributed to a POS & Inventory Management System by implementing product management, stock tracking, search, pagination, and billing-related modules as part of a collaborative development team.",
+    tech: "MongoDB • Express.js • React.js • Node.js",
     img: "/pos2.png",
     link: "https://github.com/alishasaif13/pos-inventory-system",
   },
   {
-    title: "Kids Learning Hub UI App",
-    desc: "Developed an interactive learning application with tracing, matching, and modular UI components for children.",
+    title: "E-Commerce Full-Stack Application",
+    desc: "Developed a complete e-commerce platform with authentication, product management, shopping cart, and order processing.",
+    tech: "React.js • Node.js • Express.js • MongoDB",
+    img: "/fullstack.png",
+    link: "https://ecommerce-fullstack-design-two.vercel.app/",
+  },
+  {
+    title: "Kids Learning & Tracing App",
+    desc: "Created an interactive educational application with tracing, matching activities, and engaging learning modules for children.",
+    tech: "React.js • HTML5 Canvas • CSS3",
     img: "/kidsapp1.png",
     link: "https://kids-tracing-app.vercel.app/",
   },
   {
-    title: "MathFlow Adaptive Learning Platform",
-    desc: "Building an adaptive learning platform with role-based access, progress tracking, and rule-based difficulty adjustment.",
-    img: "/mathflow.png",
-    link: "https://github.com/alishasaif13/mathflow",
+    title: "Beauty Products E-Commerce UI",
+    desc: "Designed a responsive e-commerce interface with modern product listings, filtering, and reusable UI components.",
+    tech: "React.js • Tailwind CSS",
+    img: "/ui.png",
+    link: "https://store-xz22.vercel.app/",
+  },
+  {
+    title: "Almahdia Fashion UI",
+    desc: "Built a responsive fashion e-commerce frontend with modern layouts, reusable components, and smooth navigation.",
+    tech: "React.js • Bootstrap • CSS3",
+    img: "/almahdia.png",
+    link: "http://almahdia-fashion-app.vercel.app",
   },
 ];
   return (
-  <section id="projects" className="py-20 bg-[#0A0F1F] px-6">
+  <section id="projects" className="py-20 bg-[#0F172A] px-6">
       <div className="max-w-6xl mx-auto text-center">
 
         <h2 className="text-4xl font-bold text-white mb-12">

@@ -1,35 +1,48 @@
 import { motion } from "framer-motion";
 
 const Skills = () => {
-  const coreSkills = [
-    "Golang",
-    "PostgreSQL",
-    "Node.js",
-    "Express.js",
-    "REST APIs",
-  ];
-
-  const frontend = [
-     "HTML",
-    "CSS",
-    "Bootstrap",
-    "React.js",
-    "JavaScript",
-   
-  ];
-
-  const databases = [
-    "MongoDB",
-    "PostgreSQL",
-  ];
-
-  const tools = [
-    "Git",
-    "GitHub",
-    "VS Code",
-    "Cursor AI",
-    "VMware",
-  ];
+ 
+const coreSkills = [
+  "Golang",
+  "Gin Framework",
+  "GORM",
+  "Node.js",
+  "Express.js",
+  "REST APIs",
+  "JWT Authentication",
+  "RBAC",
+  "MVC Architecture",
+];
+ 
+const frontend = [
+  "HTML5",
+  "CSS3",
+  "Bootstrap",
+  "Tailwind CSS",
+  "React.js",
+  "JavaScript",
+];
+const databases = [
+  "PostgreSQL",
+  "MongoDB",
+  "SQL",
+];
+ const tools = [
+  "Git",
+  "GitHub",
+  "Postman",
+  "VS Code",
+  "Cursor AI",
+  "Linux (Ubuntu)",
+];
+const networking = [
+  "Computer Networking",
+  "Cisco Packet Tracer",
+  "VMware",
+  "Kali Linux",
+  "Cyber Security",
+  "Cloud Computing",
+];
 
   return (
     <section id="skills" className="py-20 bg-[#0A0F1F] px-6">
@@ -138,7 +151,29 @@ const Skills = () => {
             </motion.span>
           ))}
         </div>
+<motion.h3
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="text-xl font-semibold text-[#8B5CF6] mb-4 mt-10"
+>
+  Networking & Security
+</motion.h3>
 
+<div className="flex flex-wrap justify-center gap-3">
+  {networking.map((skill, index) => (
+    <motion.span
+      key={index}
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
+      className="px-4 py-2 bg-[#111827] border border-[#1F2937] text-gray-300 rounded-full
+      hover:border-[#8B5CF6] hover:text-white transition duration-300"
+    >
+      {skill}
+    </motion.span>
+  ))}
+</div>
       </div>
     </section>
   );

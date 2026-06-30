@@ -8,7 +8,7 @@ const Experience = () => {
       companyUrl: "#",
       duration: "Mar 2026 – Present",
       desc: "Developing backend systems using Golang and PostgreSQL, building RESTful APIs, handling database design, and optimizing performance for production-level applications.",
-      certificate: null,
+      certificate: "/bytes cer.jpeg",
     },
     {
       role: "Web Developer",
